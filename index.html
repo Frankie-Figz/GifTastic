@@ -1,105 +1,31 @@
+</body>
+</html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/css/style.css">
     <title>GIF-Tastic</title>
-    <div class="container">
-            <h1>Movie Search</h1>
-            <!-- Rendered buttons will get dumped here  -->
-            <div id="buttons-view"></div>
-            <form id="movie-form">
-              <label for="movie-input">Add a Movie, Yo!</label>
-              <input type="text" id="movie-input"><br>
-              <!-- Button triggers new movie to be added -->
-              <input id="add-movie" type="submit" value="Add a Movie, Yo!">
-            </form>
-        
-            <!-- Movies will get dumped Here -->
-            <div id="movies-view"></div>    
-    </div>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>GIF Search</h1>
+        <!-- Rendered buttons will get dumped here  -->
+        <div id="buttons-view"></div>
+        <form id="gif-form">
+          <label for="gif-input">Add a GIF</label>
+          <input type="text" id="gif-input"><br>
+
+          <!-- Button triggers new movie to be added -->
+          <input id="add-gif" type="submit" value="Add a GIF">
+        </form>  
+        <!-- gifs will get dumped Here -->
+        <div id="gif-view"></div>    
+    </div>
 </body>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
-    var queryHomeSticker = "api.giphy.com/v1/stickers/search";
-    var queryHomeGIF = "api.giphy.com/v1/gifs/search";
-
-    function displayMovieInfo(){
-
-
-    };
-    function renderImageGIF(){
-
-    };
-
-    function renderMotionGIF(){
-        // // Creates a div to hold the movie
-        // var newGifDiv = $("<div>");
-
-        // // Retrieves the Attribute Data
-        // var rating = response.Rated;
-
-        // // Creates an element to have the rating displayed
-        // var ratingDiv = $("<div>");
-
-        // // Displays the rating
-        // ratingDiv.text(rating);
-        // newMovieDiv.append(ratingDiv);
-
-        // // Retrieves the release year
-        // // Creates an element to hold the release year
-        // var releaseDiv = $("<div>");
-
-        // // Displays the release year
-        // releaseDiv.text(release);
-        // newMovieDiv.append(releaseDiv);
-
-        // // Retrieves the plot
-        // // Creates an element to hold the plot
-        // var plotDiv = $("<div>");
-
-        // // Appends the plot
-        // plotDiv.text(plot);
-        // newMovieDiv.append(plotDiv);
-
-        // // Creates an element to hold the image
-        // var imgDiv = $("<img src = " + response.Poster + ">");
-
-        // // Appends the image
-        // newMovieDiv.prepend(imgDiv);
-
-        // // Puts the entire Movie above the previous movies.
-        // // $(newMovieDiv).insertBefore( ".movie" );
-        // $("#movies-view").prepend(newMovieDiv);
-
-    };
-
-    $("#gif").on("click", renderMotionGIF());
-    $("#add-gif-button").on("click",renderImageGIF());
-    
-    // title = 
-
-    params = {t: title};
-
-    function formAJAX(params){
-
-        // Insert here the param logic to extract the queryURL
-        queryURL = queryHome + jQuery.param(params);
-        $.ajax({
-          url: queryURL,
-          method: "GET"
-        }).then(function(response) {
-          
-            return response;
-
-        });
-        
-    };
-
+<script type="text/javascript" src="asset\javascript\script.js">
 </script>
-
 </html>

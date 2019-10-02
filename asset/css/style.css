@@ -4,3 +4,38 @@ body{
     background-size:cover; 
     
 }
+
+h1 {
+    font-weight: bolder;
+    /* text-align: center; */
+    vertical-align: middle;
+    color: whitesmoke;
+    text-indent: 5%;
+    font-size: 54px;
+    margin: 5% 0px 0px 0px;
+}
+
+* {
+    font-family: 'Mansalva', cursive;
+    font-size: 26px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.populateViewAreaGif{
+    margin: 2% 1% 2% 1%;
+    background-color: greenyellow;
+}
+
+#gif-input{
+    background-color: greenyellow;
+    color:black;
+}
+#add-gif{
+    background-color: greenyellow;
+}
+p{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 32px;
+}

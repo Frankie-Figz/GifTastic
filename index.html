@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="asset/css/style.css">
     <title>GIF-Tastic</title>
 </head>
 <body>
     <div class="container">
-        <h1>GIF Search</h1>
+        <h1>MONSTER GIF ! </h1>
         <!-- Rendered buttons will get dumped here  -->
-        <div id="buttons-view"></div>
+        <div id="buttons-view">
+            <button type ="button" gif-category="Monster's Inc" class="populateViewAreaGif"> Monster's Inc </button>
+            <button type ="button" gif-category="Minions" class="populateViewAreaGif"> Minions </button>
+            <button type ="button" gif-category="Care bears" class="populateViewAreaGif"> Care bears </button>
+
+        </div>
         <form id="gif-form">
           <label for="gif-input">Add a GIF</label>
           <input type="text" id="gif-input"><br>
@@ -25,7 +31,10 @@
         <div id="gif-view"></div>    
     </div>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+</script>
 <script type="text/javascript" src="asset\javascript\script.js">
+    $(".populateViewAreaGif").addEventListener("click",displayGifOnViewArea);
 </script>
 </html>
